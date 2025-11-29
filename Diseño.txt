@@ -1,0 +1,14 @@
+DMZ:
+-Las webs debo tener solo reglas que me permitan el trafico directo a internet. 
+-Limitar el trafico de DMZ -> LAN. No debe haber forma de accder a la red interna bajo ningun tipo de mecanismo o protocolo
+-La DMZ va a estra sobre 10.40.27.0/24, lo que constituye un rango de IPS privadas.
+
+LAN:
+-Como poseemos una acceso irrestricto a internet, debemos permitir cualquier tipo de protocolo que vaya desde LAN -> Internet.
+ Puede considerarse controlar este tipo de actividad por medio de logs. 
+-A su vez desde LAN debemos habilitar el trafico a los servicios de DMZ, en este caso a las paginas que proporciona. 
+-La LAN va a estra sobre 192.168.1.0/24, lo que constituye un rango de IPS privadas.
+-Recordar activar el servicio de DHCP en la interfaz lan dentro del pfsense
+
+NAT:
+-En nuestra caso la configuracion de nat nos permite sacar todo el trafico de la red miednte la ip del pfsense
