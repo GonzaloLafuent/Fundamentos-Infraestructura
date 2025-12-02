@@ -1,0 +1,13 @@
+Escenario y necesidades:
+Actualmente a no tener una red segemtnada todos los servicios, tanto webs expuestas al exterior como tambien workstation internas de la componia, corren sobre la misma red.
+Esto principalmente dificulta el control sobre el trafico y expone la estructura interna de la organizacion, dado que al extar todos conectados en la misma red no tenemos forma
+de establecer reglas que permitan controla el flujo de informacion y como se comunican las partes externas e intenas de la organizacion.
+Al no tener la capacidad de establecer este control, si solo un dispositoc conectada  la misma es vulnerado, podra tener acceso a casis cualqueir sistema conectado frente a la misma red.
+Por otro lado, puede presentar probelmas de esclabilidad, al tener sola una red definida, frente al aumento de wokrstation conectadas a la misma, el reango de direcciones IPS puede quedarse corto. 
+Otro probelma es el aumento de trafico que se maneja por una sola red, generando congestion en la misma.
+
+Buenas practicas de seguridad:
+
+
+Conclusion:
+
